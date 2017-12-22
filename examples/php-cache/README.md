@@ -1,7 +1,7 @@
 # Example for a simple PHP cache setup
 
 * The test page will be located in http://php-cache.local .
-* Open hosts file.
+* Open the `hosts` file.
 `sudo nano /etc/hosts`;
 * Add a new record in the hosts file.
 `127.0.0.1       php-cache.local`
