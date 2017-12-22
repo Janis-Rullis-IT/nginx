@@ -1,0 +1,1 @@
+# How to provide conditional request settings like timeout or caching?
