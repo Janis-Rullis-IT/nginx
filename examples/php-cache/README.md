@@ -2,7 +2,6 @@
 
 * The test page will be located in http://php-cache.local .
 * Download this repo.
-`git clone git@github.com:janis-rullis/nginx.git`
 * Open the `hosts` file.
 `sudo nano /etc/hosts`;
 * Add a new record in the hosts file.
