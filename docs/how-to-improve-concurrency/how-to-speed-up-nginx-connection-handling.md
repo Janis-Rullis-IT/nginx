@@ -58,4 +58,4 @@ after 1 minute.
 ## Use HTTP2 A.K.A. H2
 HTTP by default has a really small concurrent request limit. So H2 fixes this.
 This example explains it:
-* [h2 VS HTTP](docs/h2.md#h2-vs-http)
+* [h2 VS HTTP](/docs/h2.md#h2-vs-http)
