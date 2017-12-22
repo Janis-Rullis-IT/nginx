@@ -20,7 +20,7 @@ In this tutorial we will set 2 caches:
 * one for not authorized users that expires after 1 hour 
 * and one for authorized users that expires after 5 minutes.
 
-### Define those caches in the [nginx.conf](nginx.conf)
+### Define those caches in the [nginx.conf](/nginx.conf)
 * `fastcgi_cache_path /tmp/cache_1h levels=1:2 keys_zone=cache_1h:100m max_size=100m inactive=1h;`
 * `fastcgi_cache_path /tmp/cache_5m_auth levels=1:2 keys_zone=cache_5m_auth:100m max_size=100m inactive=5m;`
 * ![image](/docs/resources/images/cache-dir.png)
@@ -43,7 +43,7 @@ In case if we don't want to cache PUT (update) requests or others.
 
 ## Use the 1 hour unauth cache for a static content like text
 
-### See [a working example](examples/php-cache/).
+### See [a working example](/examples/php-cache/).
 
 * Duplicate `index.php` to `index_cached_1h.php`. To understand why this is 
 necessary read [Why conditional requests are harder to implement for PHP?](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
