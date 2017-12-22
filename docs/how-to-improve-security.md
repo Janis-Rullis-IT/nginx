@@ -14,7 +14,7 @@ server {
 ```
 
 ### Example
-* [api.conf] (/api.conf)
+* [api.conf](/api.conf)
 
 ## Block access to specific file types
 Like .conf, .ini, .lock, .git, etc.
