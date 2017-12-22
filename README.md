@@ -8,8 +8,8 @@
 ## Benefits 
 
 * [Concurency improvements](/docs/how-to-improve-concurrency/how-to-improve-concurrency.md)
-* [Security improvements] (/docs/how-to-improve-security.md)
-* [Setup cache for PHP] (/docs/caching-php.md)
+* [Security improvements](/docs/how-to-improve-security.md)
+* [Setup cache for PHP](/docs/caching-php.md)
 
 ## Additional 
 
