@@ -2,6 +2,8 @@
 
 * The test page will be located in http://php-cache.local .
 * Download this repo.
+* Add permissions to this folder.
+* `sudo chmod a+rwX /var/www/nginx/ -R`
 * Open the `hosts` file.
 `sudo nano /etc/hosts`;
 * Add a new record in the hosts file.
