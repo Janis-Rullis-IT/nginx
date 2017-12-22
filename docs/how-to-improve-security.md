@@ -36,5 +36,5 @@ location ~ \index.php$ {
 Won't allow to access page using `yoursite.com/index.php` syntax.
 
 ### Example
-* [api.conf] (api.conf)
+* [api.conf](api.conf)
 
