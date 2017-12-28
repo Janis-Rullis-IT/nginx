@@ -2,9 +2,9 @@
 
 This document is about caching content on each machine not the proxy they are connected to.
 
-## [What is a reverse proxy?](/docs/what-is-a-reverse-proxy.md)
+## [What is a reverse proxy?](what-is-a-reverse-proxy.md)
 
-/nginx/docs/## Difference between reverse proxy caching and PHP
+## Difference between reverse proxy caching and PHP
 
 ### Reverse proxy cache
 * ![image](resources/images/reverse-proxy-cache-2.jpg)
@@ -15,12 +15,12 @@ This document is about caching content on each machine not the proxy they are co
 * Prefix: `fastcgi_cache_`.
 
 ## Setup the cache
-/nginx/docs//nginx/docs//nginx/docs//nginx/docs//nginx/docs//nginx/docs/
+
 In this tutorial we will set 2 caches:
 * one for not authorized users that expires after 1 hour 
 * and one for authorized users that expires after 5 minutes.
 
-### Define those caches in the [nginx.conf](/nginx.conf)
+### Define those caches in the [nginx.conf](../nginx.conf)
 * `fastcgi_cache_path /tmp/cache_1h levels=1:2 keys_zone=cache_1h:100m max_size=100m inactive=1h;`
 * `fastcgi_cache_path /tmp/cache_5m_auth levels=1:2 keys_zone=cache_5m_auth:100m max_size=100m inactive=5m;`
 * ![image](resources/images/cache-dir.png)
@@ -34,7 +34,7 @@ will consume same amount of memory to keep track of those files.
 * `inactive` - time the cache expires.
 
 ### Tell NGINX that we want to control cache by our own
-/nginx/docs//nginx/docs//nginx/docs//nginx/docs//nginx/docs/By default NGINX cache reacts to Cache headers
+By default NGINX cache reacts to Cache headers
 * `fastcgi_ignore_headers Cache-Control Expires Set-Cookie;`
 
 ### Define allowed request methods that can be cached
@@ -43,11 +43,11 @@ In case if we don't want to cache PUT (update) requests or others.
 
 ## Use the 1 hour unauth cache for a static content like text
 
-### See [a working example](/examples/php-cache/).
+### See [a working example](../examples/php-cache/).
 
 * Duplicate `index.php` to `index_cached_1h.php`. To understand why this is 
-necessary read [Why conditional requests are harder to implement for PHP?](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
-docs
+necessary read [Why conditional requests are harder to implement for PHP?](how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
+
 ### Parameters
 
 * URL will be `/static-text`;
@@ -65,7 +65,7 @@ explained later in more details.
  * `always` - If the always parameter is specified, the header field will 
 be added regardless of the response code. Which means if it is not added
 then header sometimesdocs can not appear.
-* `include` [snippets/fastcgi-php.conf](/snippets/fastcgi-php.conf) `;` - include 
+* `include` [../snippets/fastcgi-php.conf](/snippets/fastcgi-php.conf) `;` - include 
 the regular fastcgi commands like `fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;`.
 
 ```
@@ -110,7 +110,7 @@ Like FAQ that depends on the user that has been logged in. Like there could be
 different questions for a business and a personal account.
 
 * Duplicate `index.php` to `index_cached_5m_auth.php`. To understand why this is 
-necessary read [Why conditional requests are harder to implement for PHP?](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
+necessary read [Why conditional requests are harder to implement for PHP?](how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
 
 ### Parameters
 
@@ -167,7 +167,7 @@ location ~ \index_cached_5m_auth.php$ {
 with a value "MISS, 5m_auth";
 * Refresh.
 * The response is instant and 'Cache-Status' header now is 'HIT, 5m_auth'.
-docs
+
 ### Additional note
 
 If you don't want the cache to be used if the authorization ID `cid` have not 
