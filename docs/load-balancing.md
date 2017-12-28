@@ -52,4 +52,4 @@ server {
 
 ## Resources
 * [NGINX.org ngx_http_upstream_module](http://nginx.org/en/docs/http/ngx_http_upstream_module.html)
-* [Scaling Web Applications with NGINX Load Balancing and Caching | Datadog](https://youtu.be/jVCYaLEBCpU?list=PLSyMwbwM_tntgUiWx_wzSQsAZmLYdASQB]
+* [Scaling Web Applications with NGINX Load Balancing and Caching | Datadog](https://youtu.be/jVCYaLEBCpU?list=PLSyMwbwM_tntgUiWx_wzSQsAZmLYdASQB)
