@@ -11,7 +11,7 @@ This document is about caching content on each machine not the proxy they are co
 * Prefix: `proxy_cache_`.
 
 ### PHP caching
-* ![image](/docs/resources/images/php-cache-2.jpg)
+* ![image](resources/images/php-cache-2.jpg)
 * Prefix: `fastcgi_cache_`.
 
 ## Setup the cache
@@ -23,8 +23,8 @@ In this tutorial we will set 2 caches:
 ### Define those caches in the [nginx.conf](/nginx.conf)
 * `fastcgi_cache_path /tmp/cache_1h levels=1:2 keys_zone=cache_1h:100m max_size=100m inactive=1h;`
 * `fastcgi_cache_path /tmp/cache_5m_auth levels=1:2 keys_zone=cache_5m_auth:100m max_size=100m inactive=5m;`
-* ![image](/docs/resources/images/cache-dir.png)
-* ![image](/docs/resources/images/cache-file-struct.png)
+* ![image](resources/images/cache-dir.png)
+* ![image](resources/images/cache-file-struct.png)
 
 #### Explanation
 * `/tmp/cache_1h` - where to store specifc cache files.
@@ -60,7 +60,7 @@ explained later in more details.
 * `add_header` - add info about the cache. 
  * `$upstream_cache_status` - The status can be either “MISS”, “BYPASS”, “EXPIRED”, 
 “STALE”, “UPDATING”, “REVALIDATED”, or “HIT”.
- *  ![image](/docs/resources/images/server-status-header.png)
+ *  ![image](resources/images/server-status-header.png)
  * `1h` - a key to identify which cache was processed. Good for debugging.
  * `always` - If the always parameter is specified, the header field will 
 be added regardless of the response code. Which means if it is not added
@@ -129,9 +129,9 @@ Here's an example how to do that:
 
 `setcookie('cid', hash('sha256',mt_rand()),time()+60*60*24*7, '/', $_SERVER['HTTP_HOST'], false, false);`
 
-* ![image](/docs/resources/images/cid-cookie.png)
+* ![image](resources/images/cid-cookie.png)
 * Attach the cookie's value to the requeast as `cid` header.
-* ![image](/docs/resources/images/cid-header.png)
+* ![image](resources/images/cid-header.png)
 * Remove this cookie in the logout method.
 
 Hints:

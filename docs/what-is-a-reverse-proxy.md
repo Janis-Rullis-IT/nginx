@@ -1,6 +1,6 @@
 # What is a reverse proxy?
 
-![image](/docs/resources/images/reverse-proxy.jpg)
+![image](resources/images/reverse-proxy.jpg)
 
 ## Opposite of the regular (forward) proxy
 

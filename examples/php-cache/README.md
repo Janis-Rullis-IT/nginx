@@ -18,4 +18,4 @@ I would use Midnight Commander (`mc` command) and create a symlink.
 'INDEX' should appear.
 * Open the page that is being cached http://php-cache.local/static-text
 * A timestamp should appear which after a refresh will not change for a hour.
-* ![image](/docs/resources/images/php-cache-example.png)
+* ![image](../docs/resources/images/php-cache-example.png)
