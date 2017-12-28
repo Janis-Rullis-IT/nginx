@@ -65,7 +65,7 @@ explained later in more details.
  * `always` - If the always parameter is specified, the header field will 
 be added regardless of the response code. Which means if it is not added
 then header sometimesdocs can not appear.
-* `include` [../snippets/fastcgi-php.conf](/snippets/fastcgi-php.conf) `;` - include 
+* `include` [/snippets/fastcgi-php.conf](../snippets/fastcgi-php.conf) `;` - include 
 the regular fastcgi commands like `fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;`.
 
 ```
