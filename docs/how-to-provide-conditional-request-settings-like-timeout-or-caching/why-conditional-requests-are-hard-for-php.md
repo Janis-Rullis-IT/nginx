@@ -82,6 +82,17 @@ block and just ask it to read the new URL from `request_uri`.
 
 Won't work, because [location only checks `request_url`](/docs/nginx-constraints/contraints-of-nginx-location-block.md#checks-only-request_url-value) which now is `index.php`.
 
+### 4) Use `alias`
+```
+	location /static-text {
+		alias index.php;
+		add_header My-Long-Timeout true always;
+        include snippets/long_requests.conf;
+        include snippets/fastcgi-php.conf;
+	}
+```
+Will return 404 Not Found.
+
 ### 5) return to @block
 ```
 location ~ \index.php$ {
