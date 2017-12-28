@@ -40,7 +40,7 @@ location ~ \index.php$ {
 ### Why this is a problem?
 Now try to add conditions here. What would you do? 
 
-#### [Before You start maybe you want to set up a test page and try this Yourself?](/examples/php-constraints/README.md)
+#### [Before You start maybe you want to set up a test page and try this Yourself?](../../examples/php-constraints/README.md)
 
 #### 1) Simply just add an `if` block and put the required content there, right? 
 Like this?
@@ -80,7 +80,7 @@ By default I mean. There are some extensions that allow that.
 * `If` block won't be necessary because we will use supported methods like `location`
 block and just ask it to read the new URL from `request_uri`.
 
-Won't work, because [location only checks `request_url`](/docs/nginx-constraints/contraints-of-nginx-location-block.md#checks-only-request_url-value) which now is `index.php`.
+Won't work, because [location only checks `request_url`](../nginx-constraints/contraints-of-nginx-location-block.md#checks-only-request_url-value) which now is `index.php`.
 
 ### 4) Use `alias`
 ```
@@ -115,8 +115,8 @@ location ~ \index.php$ {
 
 Will work but will become messy for a complex logic - lot of conditions inside
 one block, it is much trickier to provide simple logical operations because
-[NGINX has strict constraints](/docs/nginx-constraints) like [it does not provide conditions with multiple
-logical operations (AND, OR, etc.)](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/how-to-have-multiple-conditions-in-nginx.md).
+[NGINX has strict constraints](../nginx-constraints) like [it does not provide conditions with multiple
+logical operations (AND, OR, etc.)](../how-to-provide-conditional-request-settings-like-timeout-or-caching/how-to-have-multiple-conditions-in-nginx.md).
 
 ## SOLUTION
 If the problem is that files does not match URL then make them match. Duplicate 
@@ -144,5 +144,5 @@ location ~ \index_long_request.php$ {
     include snippets/fastcgi-php.conf;
 }
 ```
-
-## [Working conditional requests for PHP](/examples/php-cache/README.md).
+examples
+## [Working conditional requests for PHP](../../examples/php-cache/README.md).
