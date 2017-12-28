@@ -57,7 +57,30 @@ Sorry, this won't work because NGINX allows only `set`, `rewrite` and `return`
 actions and nothing else. So an error `nginx: [emerg] "include" directive is not allowed here`
 will raise when you restart the NGINX.
 
-### return to @block
+### 2) Execute index.php without a redirect
+Won't work. `try_files` is the only way to **internally, without a redirect**
+call a file that is not the same as the URL.
+
+#### What's wrong with the redirect here?
+The original pretty URL will be lost because it will be re-written with the
+redirect's URL which now is `index.php`. Which means:
+* Pretty URL in the address bar `/results` will be replaced with `index.php`.
+* PHP won't be able to recognize the request and will throw an error. 
+
+##### Fine then just set the URL manually
+Set the URL to the pretty URL before `try_files` has executed the `index.php` 
+like this `set $request_url /pretty-url`.
+This won't work too because NGINX does not allow to mess with it's internal variables
+By default I mean. There are some extensions that allow that.
+
+### 3) Okay, do the redirect to index.php but check location from the new URI
+* PHP will be executed because of the redirect to index.php.
+* `If` block won't be necessary because we will use supported methods like `location`
+block and just ask it to read the new URL from `request_uri`.
+
+Won't work, because [location only checks `request_url`](/docs/nginx-constraints/contraints-of-nginx-location-block.md#checks-only-request_url-value) which now is `index.php`.
+
+### 5) return to @block
 ```
 location ~ \index.php$ {
         internal;
@@ -81,23 +104,6 @@ Will work but will become messy for a complex logic - lot of conditions inside
 one block, it is much trickier to provide simple logical operations because
 [NGINX has strict constraints](/docs/nginx-constraints) like [it does not provide conditions with multiple
 logical operations (AND, OR, etc.)](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/how-to-have-multiple-conditions-in-nginx.md).
-
-### Execute index.php without a redirect
-Won't work. `try_files` is the only way to **internally, without a redirect**
-call a file that is not the same as the URL.
-
-#### What's wrong with the redirect here?
-The original pretty URL will be lost because it will be re-written with the
-redirect's URL which now is `index.php`. Which means:
-* Pretty URL in the address bar `/results` will be replaced with `index.php`.
-* PHP won't be able to recognize the request and will throw an error. 
-
-### Okay, do the redirect to index.php but check location from the new URI
-* PHP will be executed because of the redirect to index.php.
-* `If` block won't be necessary because we will use supported methods like `location`
-block and just ask it to read the new URL from `request_uri`.
-
-Won't work, because [location only checks `request_url`](/docs/nginx-constraints/contraints-of-nginx-location-block.md#checks-only-request_url-value) which now is `index.php`.
 
 ## SOLUTION
 If the problem is that files does not match URL then make them match. Duplicate 
@@ -125,3 +131,5 @@ location ~ \index_long_request.php$ {
     include snippets/fastcgi-php.conf;
 }
 ```
+
+## [Working conditional requests for PHP](/examples/php-cache/README.md).
