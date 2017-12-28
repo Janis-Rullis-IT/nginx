@@ -14,13 +14,13 @@ server {
 ```
 
 ### Example
-* [api.conf](/api.conf)
+* [api.conf](../api.conf)
 
 ## Block access to specific file types
 Like .conf, .ini, .lock, .git, etc.
 
 ### Example
-* [/snippets/security.conf](/snippets/security.conf)
+* [/snippets/security.conf](../snippets/security.conf)
 
 ## Use `internal` keyword for internal requests
 For example
@@ -36,5 +36,5 @@ location ~ \index.php$ {
 Won't allow to access page using `yoursite.com/index.php` syntax.
 
 ### Example
-* [api.conf](/api.conf)
+* [api.conf](../api.conf)
 
