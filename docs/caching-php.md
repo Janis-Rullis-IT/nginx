@@ -188,8 +188,8 @@ location /faq {
 ## Resources
 * [http://czerasz.com/2015/03/30/nginx-caching-tutorial/](http://czerasz.com/2015/03/30/nginx-caching-tutorial/)
 * [http://docs.unified-streaming.com/tutorials/caching/reverse-proxy.html](http://docs.unified-streaming.com/tutorials/caching/reverse-proxy.html)
-* [https://mattbrictson.com/nginx-reverse-proxy-cache] (https://mattbrictson.com/nginx-reverse-proxy-cache)
-* [https://www.slideshare.net/ortussolutions/itb2017-nginx-effective-high-availability-content-caching] (https://www.slideshare.net/ortussolutions/itb2017-nginx-effective-high-availability-content-caching)
+* [https://mattbrictson.com/nginx-reverse-proxy-cache](https://mattbrictson.com/nginx-reverse-proxy-cache)
+* [https://www.slideshare.net/ortussolutions/itb2017-nginx-effective-high-availability-content-caching(https://www.slideshare.net/ortussolutions/itb2017-nginx-effective-high-availability-content-caching)
 * [https://blog.alexellis.io/save-and-boost-with-nginx/](https://blog.alexellis.io/save-and-boost-with-nginx/)
 * [https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers](https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers)
 * [https://www.nginx.com/blog/benefits-of-microcaching-nginx/](https://www.nginx.com/blog/benefits-of-microcaching-nginx/)
