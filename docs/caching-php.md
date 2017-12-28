@@ -4,10 +4,10 @@ This document is about caching content on each machine not the proxy they are co
 
 ## [What is a reverse proxy?](/docs/what-is-a-reverse-proxy.md)
 
-## Difference between reverse proxy caching and PHP
+/nginx/docs/## Difference between reverse proxy caching and PHP
 
 ### Reverse proxy cache
-* ![image](/nginx/docs/resources/images/reverse-proxy-cache-2.jpg)
+* ![image](resources/images/reverse-proxy-cache-2.jpg)
 * Prefix: `proxy_cache_`.
 
 ### PHP caching
@@ -15,7 +15,7 @@ This document is about caching content on each machine not the proxy they are co
 * Prefix: `fastcgi_cache_`.
 
 ## Setup the cache
-
+/nginx/docs//nginx/docs//nginx/docs//nginx/docs//nginx/docs//nginx/docs/
 In this tutorial we will set 2 caches:
 * one for not authorized users that expires after 1 hour 
 * and one for authorized users that expires after 5 minutes.
@@ -34,7 +34,7 @@ will consume same amount of memory to keep track of those files.
 * `inactive` - time the cache expires.
 
 ### Tell NGINX that we want to control cache by our own
-By default NGINX cache reacts to Cache headers
+/nginx/docs//nginx/docs//nginx/docs//nginx/docs//nginx/docs/By default NGINX cache reacts to Cache headers
 * `fastcgi_ignore_headers Cache-Control Expires Set-Cookie;`
 
 ### Define allowed request methods that can be cached
