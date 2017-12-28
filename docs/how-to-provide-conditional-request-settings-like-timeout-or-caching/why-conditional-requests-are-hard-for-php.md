@@ -52,14 +52,35 @@ location ~ \index.php$ {
     include snippets/fastcgi-php.conf;
 }
 ```
-Sorry, this won't work because NGINX allows only `return`, `rewrite` and `set` 
-actions and nothing else.
 
-### Fine, then I'll just rewrite to @block
-...
+Sorry, this won't work because NGINX allows only `set`, `rewrite` and `return` 
+actions and nothing else. So an error `nginx: [emerg] "include" directive is not allowed here`
+will raise when you restart the NGINX.
 
 ### return to @block
-Will work.
+```
+location ~ \index.php$ {
+        internal;
+
+		if ($request_uri ~ (static-text) ) {
+			error_page 419 = @myblock;
+			return 419;
+		}
+
+        include snippets/fastcgi-php.conf;
+    }
+
+	location @myblock {
+		add_header My-Long-Timeout true always;
+		include snippets/long_requests.conf;
+		include snippets/fastcgi-php.conf;
+	}
+```
+
+Will work but will become messy for a complex logic - lot of conditions inside
+one block, it is much trickier to provide simple logical operations because
+[NGINX has strict constraints](/docs/nginx-constraints) like [it does not provide conditions with multiple
+logical operations (AND, OR, etc.)](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/how-to-have-multiple-conditions-in-nginx.md).
 
 ### Execute index.php without a redirect
 Won't work. `try_files` is the only way to **internally, without a redirect**
