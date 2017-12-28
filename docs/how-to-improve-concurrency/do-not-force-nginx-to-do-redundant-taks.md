@@ -13,7 +13,7 @@ It will cost CPU resources and time to compress something that has no benefit
 of being compressed like really small files or already compresses ones.
 
 ### Good place to start
-* Disable gzip in the nginx.conf to avoid compressing somehting you don't want
+* Disable gzip in the `nginx.conf` to avoid compressing something You don't want
 in a site you didn't ask.
 
  * ` gzip off;`
@@ -24,9 +24,9 @@ in a site you didn't ask.
 Less timeouts, faster next connection can be handled.
 
 ### Variables
-* keepalive_timeout.
-* fastcgi_read_timeout.
-* proxy_connect_timeout.
-* proxy_send_timeout.
-* proxy_read_timeout.
-* send_timeout.
+* `keepalive_timeout`
+* `fastcgi_read_timeout`
+* `proxy_connect_timeout`
+* `proxy_send_timeout`
+* `proxy_read_timeout`
+* `send_timeout`
