@@ -7,7 +7,7 @@ This document is about caching content on each machine not the proxy they are co
 ## Difference between reverse proxy caching and PHP
 
 ### Reverse proxy cache
-* ![image](/docs/resources/images/reverse-proxy-cache-2.jpg)
+* ![image](docs/resources/images/reverse-proxy-cache-2.jpg)
 * Prefix: `proxy_cache_`.
 
 ### PHP caching
@@ -47,7 +47,7 @@ In case if we don't want to cache PUT (update) requests or others.
 
 * Duplicate `index.php` to `index_cached_1h.php`. To understand why this is 
 necessary read [Why conditional requests are harder to implement for PHP?](/docs/how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
-
+docs
 ### Parameters
 
 * URL will be `/static-text`;
@@ -64,7 +64,7 @@ explained later in more details.
  * `1h` - a key to identify which cache was processed. Good for debugging.
  * `always` - If the always parameter is specified, the header field will 
 be added regardless of the response code. Which means if it is not added
-then header sometimes can not appear.
+then header sometimesdocs can not appear.
 * `include` [snippets/fastcgi-php.conf](/snippets/fastcgi-php.conf) `;` - include 
 the regular fastcgi commands like `fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;`.
 
@@ -80,7 +80,7 @@ location ~ \index_cached_1h.php$ {
 	add_header Cache-Status "$upstream_cache_status, 1h" always;
 	include snippets/fastcgi-php.conf;
 }
-```
+```docs
 
 ### In this example cache's file name `fastcgi_cache_key` is based on:
 * Protocol / scheme - $scheme. Like http, https, ftp.
@@ -97,7 +97,7 @@ So if any of these values changes then a new cache is written.
 
 ### Test
 * In the `/static-text` end-point add a 5 second delay.
-* Open the browser.
+* Open the browser.docs
 * Open Dev tool's network tab so we could see the page's response.
 * Go to `/static-text`.
 * There is a 5 second delay and the response contains a new header 'Cache-Status'
@@ -160,14 +160,14 @@ location ~ \index_cached_5m_auth.php$ {
 
 ### Test
 * In the `/faq` end-point add a 5 second delay.
-* Open the browser.
+* Open the docsbrowser.
 * Open Dev tool's network tab so we could see the page's response.
 * Go to `/faq`.
 * There is a 5 second delay and the response contains a new header 'Cache-Status'
 with a value "MISS, 5m_auth";
 * Refresh.
 * The response is instant and 'Cache-Status' header now is 'HIT, 5m_auth'.
-
+docs
 ### Additional note
 
 If you don't want the cache to be used if the authorization ID `cid` have not 
