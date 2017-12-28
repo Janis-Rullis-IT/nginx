@@ -7,7 +7,7 @@ This document is about caching content on each machine not the proxy they are co
 ## Difference between reverse proxy caching and PHP
 
 ### Reverse proxy cache
-* ![image](docs/resources/images/reverse-proxy-cache-2.jpg)
+* ![image](/nginx/docs/resources/images/reverse-proxy-cache-2.jpg)
 * Prefix: `proxy_cache_`.
 
 ### PHP caching
