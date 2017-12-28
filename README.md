@@ -4,6 +4,7 @@
 
 * [nginx.conf](nginx.conf).
 * [api.conf](api.conf).
+* [snippets](snippetssnippets).
 
 ## Benefits 
 
