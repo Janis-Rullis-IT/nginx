@@ -40,6 +40,8 @@ location ~ \index.php$ {
 ### Why this is a problem?
 Now try to add conditions here. What would you do? 
 
+#### [Before You start maybe you want to set up a test page and try this Yourself?](/examples/php-constraints/README.md)
+
 #### 1) Simply just add an `if` block and put the required content there, right? 
 Like this?
 ```
