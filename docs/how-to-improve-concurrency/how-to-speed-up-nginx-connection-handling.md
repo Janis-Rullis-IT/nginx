@@ -16,8 +16,8 @@ is reached then 500 error will just be thrown. You can try it by setting these
 limits to a very small count and then just make more requests than the count.
 
 ### Variables
-* worker_rlimit_nofile.
-* worker_connections
+* `worker_rlimit_nofile`
+* `worker_connections`
 
 ### Calculation
 #### File system's Hard limit
@@ -43,17 +43,16 @@ Keep track of every requested files for 2 minutes max while expiring resources
 after 1 minute.
 
 ### Variables
-* open_file_cache max=500 inactive=20m;
-* open_file_cache_valid 20m;
+* `open_file_cache max=500 inactive=20m;`
+* `open_file_cache_valid 20m;`
 
 ### Variables
-* keepalive_timeout.
-* fastcgi_read_timeout.
-* proxy_connect_timeout.
-* proxy_send_timeout.
-* proxy_read_timeout.
-* send_timeout.
-
+* `keepalive_timeout`
+* `fastcgi_read_timeout`
+* `proxy_connect_timeout`
+* `proxy_send_timeout`
+* `proxy_read_timeout`
+* `send_timeout`
 
 ## Use HTTP2 A.K.A. H2
 HTTP by default has a really small concurrent request limit. So H2 fixes this.
