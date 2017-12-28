@@ -3,3 +3,4 @@
 * [ ] Constraints - PHP, location, if.
 * [ ] Load balancing.
 * [ ] A+ SSl.
+* [ ] Enable github pages.
