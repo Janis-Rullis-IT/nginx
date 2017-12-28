@@ -144,5 +144,5 @@ location ~ \index_long_request.php$ {
     include snippets/fastcgi-php.conf;
 }
 ```
-examples
+
 ## [Working conditional requests for PHP](../../examples/php-cache/README.md).
