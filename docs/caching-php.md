@@ -4,7 +4,7 @@ This document is about caching content on each machine not the proxy they are co
 
 ## [What is a reverse proxy?](what-is-a-reverse-proxy.md)
 
-## Difference between reverse proxy caching and PHP
+## Difference between reverse proxy caching and PHP caching
 
 ### Reverse proxy cache
 * ![image](resources/images/reverse-proxy-cache-2.jpg)
