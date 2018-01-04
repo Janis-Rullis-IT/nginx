@@ -1,4 +1,5 @@
 /[nginx](../)/docs
+
 -----------------------------------------------------------------------------------
 
 # PHP caching / NOT [REVERSE PROXY CACHING](caching-reverse-proxy.md)
