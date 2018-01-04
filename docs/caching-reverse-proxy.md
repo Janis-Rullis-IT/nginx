@@ -1,3 +1,7 @@
+### / [nginx](.../) / [docs](.)
+
+-----------------------------------------------------------------------------------
+
 # Reverse proxy cache
 
 This document is about caching content on the proxy server to which all intranet machines are connected to.

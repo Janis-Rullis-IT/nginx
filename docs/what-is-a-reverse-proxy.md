@@ -1,3 +1,7 @@
+### / [nginx](.../) / [docs](.)
+
+-----------------------------------------------------------------------------------
+
 # What is a reverse proxy?
 
 ![image](resources/images/reverse-proxy.jpg)
