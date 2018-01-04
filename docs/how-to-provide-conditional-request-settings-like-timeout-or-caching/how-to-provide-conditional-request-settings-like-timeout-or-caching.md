@@ -1,3 +1,7 @@
+### / [docs](./../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./)
+
+-----------------------------------------------------------------------------------
+
 # How to provide conditional request settings like timeout or caching?
 
 ## For example for a plain HTML page

@@ -1,3 +1,7 @@
+### / [docs](./../) / [how-to-improve-concurrency](./)
+
+-----------------------------------------------------------------------------------
+
 # How to speed up nginx connection handling?
 
 ## Adjust the count of Workers - maybe you can have more workers that can handle requests

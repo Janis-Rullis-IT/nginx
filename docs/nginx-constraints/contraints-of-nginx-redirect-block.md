@@ -1,3 +1,7 @@
+### / [docs](./../) / [nginx-constraints](./)
+
+-----------------------------------------------------------------------------------
+
 # Contraints of NGINX redirect block
 
 PHP redirect trap. Need a beautiful url without index.php but also need another

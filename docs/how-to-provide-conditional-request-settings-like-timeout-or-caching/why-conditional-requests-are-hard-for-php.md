@@ -1,4 +1,9 @@
+### / [docs](./../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./)
+
+-----------------------------------------------------------------------------------
+
 # Why conditional requests are harder to implement for PHP?
+
 By conditional requests here I mean specific settings for specific requests.
 For example, caching for `/results` or longer timeouts for `/export`.
 

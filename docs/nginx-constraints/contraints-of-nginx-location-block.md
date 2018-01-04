@@ -1,3 +1,7 @@
+### / [docs](./../) / [nginx-constraints](./)
+
+-----------------------------------------------------------------------------------
+
 # Constraints of NGINX location block
 
 ## Checks only `request_url` value. 

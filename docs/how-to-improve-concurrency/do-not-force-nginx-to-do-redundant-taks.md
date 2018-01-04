@@ -1,3 +1,7 @@
+### / [docs](./../) / [how-to-improve-concurrency](./)
+
+-----------------------------------------------------------------------------------
+
 # Do not force NGINX to do a redundant job
 
 ## Control what do you log

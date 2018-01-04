@@ -1,4 +1,9 @@
+### / [docs](./../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./)
+
+-----------------------------------------------------------------------------------
+
 # How to have multiple conditions in NGINX?
+
 By default it has very stict constrainsts for if logical operator. One of them
 is - you can not have multiple conditions inside one if. No OR, no AND, nothing.
 
