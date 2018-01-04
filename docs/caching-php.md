@@ -1,7 +1,3 @@
-### / [nginx](../) / docs
-
------------------------------------------------------------------------------------
-
 # PHP caching / NOT [REVERSE PROXY CACHING](caching-reverse-proxy.md)
 
 This document is about caching content on each machine not the proxy they are connected to.
