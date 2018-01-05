@@ -30,5 +30,5 @@ and return the the file from the file system.
 Like for PHP every request goes through index.php.
 
 If that's the case then see:
-* [Working conditional requests for PHP](examples/php-cache).
+* [Working conditional requests for PHP](../../examples/php-cache).
 * [Why conditional requests are harder to implement for PHP?](../how-to-provide-conditional-request-settings-like-timeout-or-caching/why-conditional-requests-are-hard-for-php.md).
