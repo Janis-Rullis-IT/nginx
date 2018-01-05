@@ -155,4 +155,4 @@ location ~ \index_long_request.php$ {
 }
 ```
 
-## [Working conditional requests for PHP](../../examples/php-cache/README.md).
+## [Working conditional requests for PHP](../../examples/php-cache).
