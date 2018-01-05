@@ -30,4 +30,4 @@ and set variables value - like `set $allow "${allow}n";`
 ## Why should you need to use `if` even if it is considered evil?
 * Because of other NGINX constraints like ones for 
 * [location](contraints-of-nginx-location-block.md) or 
-* [redirect](contraints-of-nginx-redirect.md).
+* [redirect](contraints-of-nginx-redirect-block.md).
