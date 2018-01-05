@@ -1,3 +1,8 @@
+---
+title: Client cache headers explained / Expired vs Pragma vs Cache-Control
+layout: default
+---
+
 ### / [nginx](./../) / [docs](./)
 
 -----------------------------------------------------------------------------------

@@ -1,6 +1,13 @@
+---
+title: Useful tools for NGINX
+layout: default
+---
+
 ### / [nginx](./../) / [docs](./)
 
 -----------------------------------------------------------------------------------
+
+# Useful tools for NGINX
 
 ## NGINX file formater
 [https://github.com/1connect/nginx-config-formatter](https://github.com/1connect/nginx-config-formatter)

@@ -1,3 +1,8 @@
+---
+title: How to speed up nginx connection handling?
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [how-to-improve-concurrency](./)
 
 -----------------------------------------------------------------------------------

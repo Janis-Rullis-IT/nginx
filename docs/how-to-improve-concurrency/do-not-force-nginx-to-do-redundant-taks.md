@@ -1,3 +1,8 @@
+---
+title: Do not force NGINX to do a redundant job
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [how-to-improve-concurrency](./)
 
 -----------------------------------------------------------------------------------

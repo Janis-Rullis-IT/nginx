@@ -1,8 +1,13 @@
+---
+title: Great articles about NGINX
+layout: default
+---
+
 ### / [nginx](./../) / [docs](./)
 
 -----------------------------------------------------------------------------------
 
-# Greate articles about NGINX
+# Great articles about NGINX
 
 * https://github.com/denji/nginx-tuning
 * https://tweaked.io/guide/nginx/

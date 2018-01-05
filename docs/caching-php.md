@@ -1,3 +1,8 @@
+---
+title: PHP caching / NOT REVERSE PROXY CACHING
+layout: default
+---
+
 ### / [nginx](.././) / [docs](.)
 
 -----------------------------------------------------------------------------------

@@ -1,8 +1,13 @@
+---
+title: How to return plain JSON?
+layout: default
+---
+
 ### / [nginx](./../) / [docs](./)
 
 -----------------------------------------------------------------------------------
 
-# How to return plain JSON
+# How to return plain JSON?
 
 ```
 location @debug {

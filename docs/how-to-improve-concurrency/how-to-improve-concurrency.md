@@ -1,3 +1,8 @@
+---
+title: How to improve concurrency?
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [how-to-improve-concurrency](./)
 
 -----------------------------------------------------------------------------------
