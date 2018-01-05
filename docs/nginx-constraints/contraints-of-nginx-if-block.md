@@ -25,7 +25,7 @@ and set variables value - like `set $allow "${allow}n";`
 
 ## No multiple operators
 * No OR, no AND, nothing.
-* [Workaround](how-to-have-multiple-conditions-in-nginx.md)
+* [Workaround](../how-to-provide-conditional-request-settings-like-timeout-or-caching/how-to-have-multiple-conditions-in-nginx.md)
 
 ## Why should you need to use `if` even if it is considered evil?
 * Because of other NGINX constraints like ones for 
