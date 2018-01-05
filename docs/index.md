@@ -1,7 +1,11 @@
 ---
-title: Hello
+title: docs
 layout: default
 ---
+
+### / [nginx](./../) / [docs](./)
+
+-----------------------------------------------------------------------------------
 
  * [resources](./resources)
    * [images](./resources/images)
