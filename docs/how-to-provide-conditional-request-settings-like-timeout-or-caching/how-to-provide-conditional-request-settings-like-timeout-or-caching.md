@@ -1,3 +1,8 @@
+---
+title: How to provide conditional request settings like timeout or caching?
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./)
 
 -----------------------------------------------------------------------------------

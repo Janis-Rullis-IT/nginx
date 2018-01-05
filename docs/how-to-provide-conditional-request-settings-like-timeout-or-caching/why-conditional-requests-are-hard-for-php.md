@@ -1,3 +1,8 @@
+---
+title: Why conditional requests are harder to implement for PHP?
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./)
 
 -----------------------------------------------------------------------------------

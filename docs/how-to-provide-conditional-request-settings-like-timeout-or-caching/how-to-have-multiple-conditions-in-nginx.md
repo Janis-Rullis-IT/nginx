@@ -1,3 +1,8 @@
+---
+title: How to have multiple conditions in NGINX?
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./)
 
 -----------------------------------------------------------------------------------

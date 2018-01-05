@@ -1,4 +1,13 @@
-# Require request to be made from a specific IP range and have a specific cookie.
+---
+title: Require request to be made from a specific IP range and have a specific cookie
+layout: default
+---
+
+### / [nginx](./../../../) / [docs](./../../) / [how-to-provide-conditional-request-settings-like-timeout-or-caching](./../) / [examples](./)
+
+-----------------------------------------------------------------------------------
+
+# Require request to be made from a specific IP range and have a specific cookie
 
 All others will be redirected to the authorization page.
 

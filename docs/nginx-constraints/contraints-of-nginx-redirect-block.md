@@ -1,3 +1,8 @@
+---
+title: Contraints of NGINX redirect block
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [nginx-constraints](./)
 
 -----------------------------------------------------------------------------------

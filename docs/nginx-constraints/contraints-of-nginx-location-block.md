@@ -1,3 +1,8 @@
+---
+title: Constraints of NGINX location block
+layout: default
+---
+
 ### / [nginx](./../../) / [docs](./../) / [nginx-constraints](./)
 
 -----------------------------------------------------------------------------------
