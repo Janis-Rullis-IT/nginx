@@ -1,3 +1,12 @@
+---
+title: Example for a simple PHP cache setup
+layout: default
+---
+
+### / [nginx](./../../) / [examples](./../) / [php-cache](./)
+
+-----------------------------------------------------------------------------------
+
 # Example for a simple PHP cache setup
 
 * The test page will be located in http://php-cache.local .

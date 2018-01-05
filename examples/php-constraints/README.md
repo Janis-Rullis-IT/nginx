@@ -1,3 +1,12 @@
+---
+title: Playground for testing conditional requests in PHP
+layout: default
+---
+
+### / [nginx](./../../) / [examples](./../) / [php-constraints](./)
+
+-----------------------------------------------------------------------------------
+
 # Playground for testing conditional requests in PHP
 
 * The test page will be located in http://php-constraints.local .
