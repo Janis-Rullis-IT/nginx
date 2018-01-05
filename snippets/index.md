@@ -1,7 +1,12 @@
 ---
-title: Hello
+title: snippets
 layout: default
 ---
+
+### / [nginx](./../) / [snippets](./)
+
+-----------------------------------------------------------------------------------
+
  * [client-cache.conf](./client-cache.conf)
  * [fastcgi-php.conf](./fastcgi-php.conf)
  * [gzip.conf](./gzip.conf)

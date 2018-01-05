@@ -1,7 +1,12 @@
 ---
-title: Hello
+title: images
 layout: default
 ---
+
+### / [nginx](./../../../) / [docs](./../../) / [resources](./../) / [images](./)
+
+-----------------------------------------------------------------------------------
+
  * [cache-dir.png](./cache-dir.png)
  * [cache-file-struct.png](./cache-file-struct.png)
  * [cid-cookie.png](./cid-cookie.png)

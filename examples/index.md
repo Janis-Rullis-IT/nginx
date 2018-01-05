@@ -1,7 +1,12 @@
 ---
-title: Hello
+title: examples
 layout: default
 ---
+
+### / [nginx](./../) / [examples](./)
+
+-----------------------------------------------------------------------------------
+
  * [php-constraints](./php-constraints)
    * [index.php](./php-constraints/index.php)
    * [main.php](./php-constraints/main.php)
