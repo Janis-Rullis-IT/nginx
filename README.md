@@ -14,4 +14,4 @@
 
 ## Additional 
 
-* [Table of content](/docs).
+* [Table of content](docs).
